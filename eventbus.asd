@@ -12,4 +12,4 @@
                 :components
                 ((:file "package")
                  (:file "eventbus" :depends-on ("package")))))
-  :in-order-to ((test-op (test-op "eventbus/test"))))
+  :in-order-to ((test-op (test-op "eventbus-test"))))
