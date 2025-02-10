@@ -1,4 +1,4 @@
-(defsystem :eventbus/test
+(defsystem :eventbus-test
   :author "noloop <noloop@zoho.com>"
   :maintainer "noloop <noloop@zoho.com>"
   :license "GPLv3"
