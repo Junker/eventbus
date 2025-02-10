@@ -2,7 +2,8 @@
 
 (defun make-eventbus ()
   "Return eventbus instance."
-  (make-hash-table :test 'eq))
+  (make-hash-table :test 'eq
+                   #+sbcl :synchronized #+sbcl t))
 
 (defun get-listener-count-of-event (eventbus event-name)
   "Return length listeners of event. Return nil if event nonexistent."
